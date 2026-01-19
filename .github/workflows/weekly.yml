@@ -28,6 +28,19 @@ jobs:
       - name: Analyze
         run: |
           python src/analyze.py
+      
+      - name: Generate weekly post briefs
+      run: python src/weekly_posts.py
+            
+      - name: Send email
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
+          TO_EMAIL: "kevin.hidalgo@inosearch.fr"
+        run: python src/send_email.py
 
       - name: Commit updates
         run: |
@@ -36,3 +49,4 @@ jobs:
           git add data/posts.csv data/seen_urls.json reports/report.md reports/brief.json || true
           git commit -m "Weekly intel update" || exit 0
           git push
+      
