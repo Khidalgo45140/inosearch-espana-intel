@@ -1,4 +1,3 @@
-cat > src/fetch_sources.py << 'EOF'
 import re
 import json
 import time
@@ -272,4 +271,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-EOF

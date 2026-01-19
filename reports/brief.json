@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-01-19T16:37:38",
+  "generated_at": "2026-01-19T16:50:03",
   "counts": {
-    "posts": 2
+    "posts": 3
   },
   "top_posts": [
     {
@@ -29,15 +29,30 @@
         "(non détecté)"
       ],
       "snippet": "Ejemplo: Deducción I+D+i: cómo documentar el gasto para evitar ajustes."
+    },
+    {
+      "platform": "web",
+      "competitor": "Leyton",
+      "date": "",
+      "score": 0,
+      "categories": [
+        "(non classé)"
+      ],
+      "formats": [
+        "legal_update"
+      ],
+      "snippet": "Change your region and language Be sure to pick the location that matches your preferences. Leyton es una consultora internacional que ayuda a las empresas a ap"
     }
   ],
   "competitors": {
     "Leyton": {
       "themes": {
-        "Bonificación SS": 1
+        "Bonificación SS": 1,
+        "(non classé)": 1
       },
       "formats": {
-        "myth_busting": 1
+        "myth_busting": 1,
+        "legal_update": 1
       }
     },
     "Nubica": {
@@ -58,6 +73,12 @@
     },
     {
       "theme": "Deducción I+D+i",
+      "top_mentions": 1,
+      "global_mentions": 1,
+      "opportunity_score": 0.5
+    },
+    {
+      "theme": "(non classé)",
       "top_mentions": 1,
       "global_mentions": 1,
       "opportunity_score": 0.5
