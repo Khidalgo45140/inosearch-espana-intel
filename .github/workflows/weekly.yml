@@ -1,15 +1,22 @@
-name: Weekly competitor intel
+name: Weekly intel + email
 
 on:
   schedule:
-    - cron: "0 8 * * 1"  # 09:00 Paris en hiver ~ 08:00 UTC
+    # Lundi 09:00 Paris en hiver ≈ 08:00 UTC
+    # (si tu veux 09:00 Paris en été aussi, on ajustera plus tard)
+    - cron: "0 8 * * 1"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   run:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -28,10 +35,11 @@ jobs:
       - name: Analyze
         run: |
           python src/analyze.py
-      
+
       - name: Generate weekly post briefs
-      run: python src/weekly_posts.py
-            
+        run: |
+          python src/weekly_posts.py
+
       - name: Send email
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
@@ -40,13 +48,13 @@ jobs:
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
           TO_EMAIL: "kevin.hidalgo@inosearch.fr"
-        run: python src/send_email.py
+        run: |
+          python src/send_email.py
 
       - name: Commit updates
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add data/posts.csv data/seen_urls.json reports/report.md reports/brief.json || true
+          git add data/posts.csv data/seen_urls.json reports/report.md reports/brief.json reports/weekly_posts.md || true
           git commit -m "Weekly intel update" || exit 0
           git push
-      
