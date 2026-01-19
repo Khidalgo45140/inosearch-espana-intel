@@ -1,0 +1,51 @@
+categories:
+  bonificacion_ss:
+    label: "Bonificación SS"
+    keywords:
+      - "bonificación"
+      - "seguridad social"
+      - "personal investigador"
+      - "investigador"
+      - "cuota"
+      - "cotización"
+  deduccion_idi:
+    label: "Deducción I+D+i"
+    keywords:
+      - "deducción"
+      - "i+d"
+      - "i+d+i"
+      - "innovación"
+      - "impuesto de sociedades"
+      - "ley 27/2014"
+  informe_motivado:
+    label: "Informe Motivado"
+    keywords:
+      - "informe motivado"
+      - "cdti"
+      - "certificación"
+      - "acreditación"
+  documentacion_y_riesgo:
+    label: "Documentación / Riesgo"
+    keywords:
+      - "documentación"
+      - "evidencias"
+      - "inspección"
+      - "riesgo"
+      - "auditoría"
+  general_financiacion:
+    label: "Financiación innovación"
+    keywords:
+      - "ayudas"
+      - "subvención"
+      - "cdti"
+      - "enisa"
+      - "financiación"
+formats:
+  checklist:
+    keywords: ["checklist", "paso a paso", "guía", "guia"]
+  myth_busting:
+    keywords: ["mito", "falso", "error", "equivocado", "no es cierto"]
+  case_study:
+    keywords: ["caso", "cliente", "ejemplo real", "hemos conseguido", "resultado"]
+  legal_update:
+    keywords: ["ley", "real decreto", "boe", "cambio", "actualización"]
