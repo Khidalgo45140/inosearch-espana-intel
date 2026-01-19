@@ -1,2 +1,6 @@
 pandas>=2.0
 pyyaml>=6.0
+requests>=2.31
+beautifulsoup4>=4.12
+trafilatura>=1.7
+lxml>=5.0

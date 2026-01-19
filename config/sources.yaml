@@ -1,0 +1,5 @@
+sources:
+  - name: "Leyton"
+    type: "html_list"
+    url: "https://leyton.com/es/novedades/"
+    include_url_regex: "^https://leyton\\.com/es/novedades/.*"
