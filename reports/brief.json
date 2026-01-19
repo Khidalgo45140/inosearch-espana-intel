@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-01-19T15:20:27",
+  "counts": {
+    "posts": 2
+  },
+  "top_posts": [
+    {
+      "platform": "linkedin",
+      "competitor": "Leyton",
+      "date": "2026-01-10",
+      "score": 181,
+      "categories": [
+        "Bonificación SS"
+      ],
+      "formats": [
+        "myth_busting"
+      ],
+      "snippet": "Exemple: Bonificación Seguridad Social para personal investigador: requisitos y errores frecuentes."
+    },
+    {
+      "platform": "x",
+      "competitor": "Nubica",
+      "date": "2026-01-12",
+      "score": 78,
+      "categories": [
+        "Deducción I+D+i"
+      ],
+      "formats": [
+        "(non détecté)"
+      ],
+      "snippet": "Ejemplo: Deducción I+D+i: cómo documentar el gasto para evitar ajustes."
+    }
+  ],
+  "competitors": {
+    "Leyton": {
+      "themes": {
+        "Bonificación SS": 1
+      },
+      "formats": {
+        "myth_busting": 1
+      }
+    },
+    "Nubica": {
+      "themes": {
+        "Deducción I+D+i": 1
+      },
+      "formats": {
+        "(non détecté)": 1
+      }
+    }
+  },
+  "opportunities": [
+    {
+      "theme": "Bonificación SS",
+      "top_mentions": 1,
+      "global_mentions": 1,
+      "opportunity_score": 0.5
+    },
+    {
+      "theme": "Deducción I+D+i",
+      "top_mentions": 1,
+      "global_mentions": 1,
+      "opportunity_score": 0.5
+    }
+  ],
+  "recommended_playbook": [
+    "Produire un post clarificateur Bonificación SS vs Deducción I+D+i (périmètre, conditions, pièces).",
+    "Exploiter un format récurrent (checklist / myth-busting) avec un niveau de preuve supérieur (méthodo, risques, exemples).",
+    "Créer une série 'erreurs fréquentes' orientée audit (ce que l’administration/les auditeurs regardent réellement)."
+  ]
+}
