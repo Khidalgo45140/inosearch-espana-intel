@@ -1,5 +1,8 @@
+cat > config/sources.yaml << 'EOF'
 sources:
   - name: "Leyton"
     type: "html_list"
     url: "https://leyton.com/es/novedades/"
+    base_url: "https://leyton.com"
     include_url_regex: "^https://leyton\\.com/es/novedades/.*"
+EOF
