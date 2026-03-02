@@ -1,5 +1,5 @@
 # Inosearch España — Veille & Analyse (V0.1)
-_Généré le 2026-02-23 10:36_
+_Généré le 2026-03-02 08:53_
 
 ## 1) Volume analysé
 - Posts analysés : **3**
