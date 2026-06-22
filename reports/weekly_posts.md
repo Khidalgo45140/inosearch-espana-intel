@@ -1,5 +1,5 @@
 # Weekly Posts — Inosearch España (V0.2.2)
-_Generado: 2026-06-15 14:27_
+_Generado: 2026-06-22 13:38_
 
 ## Post 1 — Bonificación SS vs Deducción I+D+i: cómo no equivocarse
 
